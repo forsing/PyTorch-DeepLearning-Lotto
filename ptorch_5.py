@@ -143,7 +143,7 @@ def main():
     print("=" * 60)
     print()
 
-    train_dataset = LotoDataset("/Users/milan/Desktop/GHQ/data/loto5_109_k100.csv")
+    train_dataset = LotoDataset("/data/loto5_109_k100.csv")
 
     # ---------------- MLP ----------------
     model_mlp = SimpleFeedForwardNN().to(device)
@@ -219,9 +219,9 @@ Time: 3.43s
 Epoch 1000
 ================ PREDIKCIJE SLEDEĆE LOTO KOMBINACIJE ================
 
-Predikcija (MLP): [5, 11, 16, 22, 27, 4]
-Predikcija (RNN): [6, 11, 17, 23, 29, 5]
-Predikcija (LSTM): [5, 11, 17, 23, 29, 5]
+Predikcija (MLP): [5, 11, x, y, 27, 4]
+Predikcija (RNN): [6, 11, x, y, 29, 5]
+Predikcija (LSTM): [5, 11, x, y, 29, 5]
 
 ✅ ALL EXPERIMENTS COMPLETED
 ============================================================
