@@ -183,7 +183,7 @@ def main():
     print("=" * 60)
     print()
 
-    csv_path = "/Users/4c/Desktop/GHQ/data/loto7_4586_k24.csv"
+    csv_path = "/data/loto7_4586_k24.csv"
     full_dataset = LotoDataset(csv_path)
     n = len(full_dataset)
     split = int(0.85 * n)
